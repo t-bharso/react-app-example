@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './components/default/App';
+// import App from './components/default/App';
 import * as serviceWorker from './api/serviceWorker';
 import 'bootstrap/dist/css/bootstrap.css';
 import Counters from './components/counters';
