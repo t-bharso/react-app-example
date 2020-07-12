@@ -11,16 +11,16 @@ import Multiselect from "./components/multiselect";
 import Form from "./components/form";
 
 const routing = (
-	<Router>
+	<Router basename='/app'>
 		<div>
 			<nav className='navbar navbar-light bg-light'>
-				<a className='nav-link' href='/'>
+				<a className='nav-link' href={`${process.env.PUBLIC_URL}/`}>
 					Home <span className='sr-only'>(current)</span>
 				</a>
-				<a className='nav-link' href='/multiselect'>
+				<a className='nav-link' href={`${process.env.PUBLIC_URL}/multiselect`}>
 					Multiselect
 				</a>
-				<a className='nav-link' href='/personal'>
+				<a className='nav-link' href={`${process.env.PUBLIC_URL}/personal`}>
 					PeronalInformation
 				</a>
 			</nav>
@@ -32,7 +32,7 @@ const routing = (
 		</div>
 	</Router>
 );
-
+console.log(process.env.PUBLIC_URL);
 ReactDOM.render(routing, document.getElementById("root"));
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
